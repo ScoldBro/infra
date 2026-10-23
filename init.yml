@@ -1,0 +1,15 @@
+---
+- name: clone git repo to roles directory
+  hosts: localhost
+  gather_facts: no
+  tasks:
+    - name: ensure roles dir exists
+      file:
+        path: "roles"
+        state: directory
+    - name: clone the git repository into the roles dir
+      git:
+        repo: 'https://github.com/ScoldBro/ansible-roles'
+        dest: "roles"
+        version: main
+        force: yes
