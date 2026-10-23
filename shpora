@@ -1,0 +1,2 @@
+#создание роли в (выполнять в каталоге role)
+ansible-galaxy role init [RolName]
