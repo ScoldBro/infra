@@ -1,2 +1,12 @@
 #создание роли в (выполнять в каталоге role)
 ansible-galaxy role init [RolName]
+
+##### GIT #####
+cd ~/infra
+git status - увидеть обновления
+# добавить всё, что видит git status (если .gitignore настроен корректно)
+git add .
+# Зафиксировать
+git commit -m "Add new playbooks: init, deploy"
+# Пуш в ветку гит
+git push origin main

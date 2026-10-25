@@ -1,2 +1,3 @@
 ---
 swap_size: 2G
+path_swapfile: /swapfile
