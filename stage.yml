@@ -5,7 +5,6 @@
   become: true
   roles:
     - role: common
-    - role: hostname
 
 - name: Configure stage db servers
   hosts: db
@@ -13,5 +12,4 @@
   become: true
   roles:
     - role: common
-    - role: hostname
 

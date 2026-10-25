@@ -1,0 +1,7 @@
+---
+- name: swap disable
+  hosts: all
+  gather_facts: true
+  become: true
+  roles:
+    - role: swaptrasher
