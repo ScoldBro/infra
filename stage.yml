@@ -1,15 +1,8 @@
 ---
 - name: Configure stage web servers
-  hosts: web
+  hosts: stage
   gather_facts: true
   become: true
   roles:
     - role: common
-
-- name: Configure stage db servers
-  hosts: db
-  gather_facts: true
-  become: true
-  roles:
-    - role: common
-
+    - role: docker-install

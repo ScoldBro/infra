@@ -1,14 +1,8 @@
 ---
-- name: Configure production web servers
-  hosts: web
-  gather_facts: true
-  become: true
-  roles:
-    - role: common
-
 - name: Configure production db servers
-  hosts: db
+  hosts: prod
   gather_facts: true
   become: true
   roles:
     - role: common
+    - role: docker-install
